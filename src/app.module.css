@@ -1,0 +1,90 @@
+.app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.calculator {
+	display: flex;
+	flex-wrap: wrap;
+	background: #bcfd4c;
+	width: 232px;
+	border-radius: 8px;
+	padding: 16px;
+}
+.display {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: flex-end;
+	flex-basis: 100%;
+	height: 72px;
+	box-shadow: inset 1px 2px 6px #6e6e6e;
+	background: #b6b6b6;
+	border-radius: 8px;
+	padding: 8px;
+	margin-bottom: 16px;
+	font-size: 28px;
+	font-weight: 600;
+	color: #222222;
+	overflow: hidden;
+	word-break: normal;
+}
+
+.btnsGroup {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 166px;
+	height: 224px;
+	margin-right: 16px;
+}
+
+.btnNumber {
+	width: 50px;
+	height: 50px;
+	border: none;
+	outline: none;
+	box-shadow: 1px 2px 2px #6e6e6e;
+	border-radius: 8px;
+	background: #b6b6b6;
+	color: #bcfd4c;
+	text-shadow: 0 0 3px #6e6e6e;
+	font-size: 24px;
+	transition: all ease 0.2s;
+}
+
+.btnNumber:hover {
+	box-shadow: 0 0 2px #6e6e6e;
+}
+
+.operatorsGrupp {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.operator {
+	width: 50px;
+	height: 50px;
+	border: none;
+	outline: none;
+	box-shadow: 1px 2px 2px #6e6e6e;
+	border-radius: 8px;
+	background: #b6b6b6;
+	color: #bcfd4c;
+	text-shadow: 0 0 3px #6e6e6e;
+	font-size: 28px;
+	transition: all ease 0.2s;
+}
+
+.operator:hover {
+	box-shadow: 0 0 2px #6e6e6e;
+}
+
+.result {
+	color: #bcfd4c;
+	font-size: 32px;
+}
