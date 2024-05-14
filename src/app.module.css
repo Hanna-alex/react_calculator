@@ -86,5 +86,6 @@
 
 .result {
 	color: #bcfd4c;
+	text-shadow: 0 0 8px #6e6e6e;
 	font-size: 32px;
 }

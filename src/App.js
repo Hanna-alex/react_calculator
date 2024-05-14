@@ -30,13 +30,8 @@ export const App = () => {
 	}
 
 	const clickOperator = (value) => {
-		if (value === 'C') {
-			setOperand1('0')
-			setOperator('')
-			setOperand2('')
-			setResult('')
-		}
-		else if (value === '=') {
+
+		const getResult = () => {
 			if (operator === '+') {
 				const result = Number(operand1) + Number(operand2)
 				setResult(String(result))
@@ -44,10 +39,9 @@ export const App = () => {
 				const result = Number(operand1) - Number(operand2)
 				setResult(String(result))
 			}
-
 		}
-		else {
 
+		const installOperatorOrOperand = () => {
 			if (result === '') {
 				setOperator(value)
 			}
@@ -56,8 +50,23 @@ export const App = () => {
 				setOperand2('')
 				setOperator(value)
 				setResult('')
-
 			}
+		}
+
+
+		if (value === 'C') {
+			setOperand1('0')
+			setOperator('')
+			setOperand2('')
+			setResult('')
+		}
+		else if (value === '=') {
+			getResult()
+
+		}
+		else {
+			installOperatorOrOperand()
+
 		}
 
 	}
